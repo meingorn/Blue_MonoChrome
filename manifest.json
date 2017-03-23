@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Blue MonoChrome",
+  "version": "1",
+
+  "description": "Turns white backgrounds on your screen into Yves Klein Blue",
+
+  "content_scripts": [
+    {
+    "matches": ["<all_urls>"],
+    "run_at": "document_start",
+    "css": ["blue.css"],
+    "js": ["blue.js"]
+
+  }
+],
+
+  "icons": {
+    "48" :"icon.png"
+  }
+
+}
